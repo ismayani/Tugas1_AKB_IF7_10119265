@@ -2,7 +2,7 @@
 
 <!-- 21 April 2022, 10119265, Ismayani Setyaningrum, IF7 -->
 
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,65 +11,60 @@
     android:background="#FFF3D4"
     tools:context=".ProfileActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="306dp"
         android:layout_height="194dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/profil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/profil" />
 
     <TextView
         android:id="@+id/textnama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:gravity="center"
         android:text="Ismayani Setyaningrum"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/textnim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textnama"
+        android:gravity="center"
         android:text="10119265"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textnama" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textkelas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textnim"
+        android:gravity="center"
         android:text="IF-7"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textnim" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textdeskripsi"
-        android:layout_width="355dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textkelas"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="Saya merupakan seorang mahasiswa jurusan Teknik Informatika di Universitas Komputer Indonesia (UNIKOM), Bandung."
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textkelas" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+</RelativeLayout>
