@@ -62,13 +62,13 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="password"/>
+        android:hint="Password"/>
 
     <EditText
         android:id="@+id/ulangipassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ulangi password"/>
+        android:hint="Ulangi Password"/>
 
     <Button
         android:id="@+id/btnregister2"
