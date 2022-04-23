@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tugas1_AKB_IF7_10119265</string>
+    <string name="planie">PLANIE</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="roti">ROTI</string>
+    <string name="cake">CAKE</string>
+    <string name="menu_maya_bakery">Menu Maya Bakery</string>
+    <string name="kue_kering">KUE KERING</string>
+    <string name="pizza">PIZZA</string>
+    <string name="nama">Nama</string>
+    <string name="e_mail">E-Mail</string>
+</resources>
